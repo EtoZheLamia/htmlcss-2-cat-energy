@@ -4,8 +4,9 @@
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "linthtml-config-htmlacademy": "^1.0.3",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
+    "stylelint-config-htmlacademy": "^0.1.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
