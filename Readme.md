@@ -58,7 +58,4 @@ git clone SSH-адрес_вашего_форка
 [check-url]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/actions
 This repo was created remotely
 # htmlcss-2-cat-energy
-# htmlcss-2-cat-energy
-# htmlcss-2-cat-energy
-# htmlcss-2-cat-energy /c/Users/Laminad folder
-# htmlcss-2-cat-energy
+
