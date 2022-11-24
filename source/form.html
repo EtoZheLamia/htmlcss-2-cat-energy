@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CAT ENERGY: Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page__header page-header">
@@ -34,7 +35,7 @@
     </nav>
   </header>
   <main class="page__main page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page__main-title page-main__primary-title">Подбор программы</h1>
     <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <section class="page-main__section form">
       <h2 class="visually-hidden">Анкета для подбора программы</h2>
@@ -43,30 +44,30 @@
           <legend class="visually-hidden">Данные кота</legend>
           <label class="form-field field">
             <span class="field__lead">ИМЯ:*</span>
-            <input class="field__input" name="cat-name" type="text" required>
+            <input class="field__input" name="cat-name" type="text" value="барсик" required>
           </label>
           <label class="form-field field">
             <span class="field__lead">Вес (кг):*</span>
-            <input class="field__input" name="cat-weight" type="number" required>
+            <input class="field__input" name="cat-weight" type="number" value="7" required>
           </label>
           <label class="form-field field">
             <span class="field__lead">Возраст (лет):</span>
-            <input class="field__input" name="cat-age" type="number">
+            <input class="field__input" name="cat-age" type="number" value="7">
           </label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="visually-hidden">Цель программы</legend>
-          <label class="form-field field">
-            <input class="field__input" name="target" type="radio" value="fit">
-            <span class="field__lead">похудение</span>
+          <label class="form-field control-radio">
+            <input class="control-radio__input" name="target" type="radio" value="fit">
+            <span class="control-radio__lead">похудение</span>
           </label>
-          <label class="form-field field">
-            <input class="field__input" name="target" type="radio" value="fitness">
-            <span class="field__lead">Набор массы</span>
+          <label class="form-field control-radio">
+            <input class="control-radio__input" name="target" type="radio" value="fitness">
+            <span class="control-radio__lead">Набор массы</span>
           </label>
-          <label class="form-field field">
-            <input class="field__input" name="target" type="radio" value="advice">
-            <span class="field__lead">Не знаю (Нужен ваш совет)</span>
+          <label class="form-field control-radio">
+            <input class="control-radio__input" name="target" type="radio" value="advice">
+            <span class="control-radio__lead">Не знаю (Нужен ваш совет)</span>
           </label>
         </fieldset>
         <fieldset class="form__group">
@@ -88,32 +89,34 @@
         </div>
         <fieldset class="form__group">
           <legend class="form__title">Дополнительно</legend>
-          <label class="form-field field">
-            <input class="field__input" name="additional" type="checkbox" value="sweetener">
-            <span class="field__lead">сахарозаменитель</span>
+          <label class="form-field control-checkbox">
+            <input class="control-checkbox__input" name="additional" type="checkbox" value="sweetener">
+            <span class="control-checkbox__lead">сахарозаменитель</span>
           </label>
-          <label class="form-field field">
-            <input class="field__input" name="additional" type="checkbox" value="water">
-            <span class="field__lead">питьевая вода</span>
+          <label class="form-field control-checkbox">
+            <input class="control-checkbox__input" name="additional" type="checkbox" value="water">
+            <span class="control-checkbox__lead">питьевая вода</span>
           </label>
-          <label class="form-field field">
-            <input class="field__input" name="additional" type="checkbox" value="milk">
-            <span class="field__lead">молоко</span>
+          <label class="form-field control-checkbox">
+            <input class="control-checkbox__input" name="additional" type="checkbox" value="milk">
+            <span class="control-checkbox__lead">молоко</span>
           </label>
-          <label class="form-field field">
-            <input class="field__input" name="additional" type="checkbox" value="vitamins">
-            <span class="field__lead">витамины</span>
+          <label class="form-field control-checkbox">
+            <input class="control-checkbox__input" name="additional" type="checkbox" value="vitamins">
+            <span class="control-checkbox__lead">витамины</span>
           </label>
         </fieldset>
-        <button class="form__button" type="submit">отправить заявку</button>
+        <button class="button form__button" type="submit">отправить заявку</button>
         <span class="form__additional">* — Обязательные поля</span>
       </form>
     </section>
     <section class="page-main__section contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__partnership">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="img/location.jpg" alt="Карта с адресом кэт энерджи" width="320" height="362">
+      <div class="page-main__section contacts-inner">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__partnership">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__map" src="img/location.jpg" alt="Карта с адресом кэт энерджи" width="320" height="362">
+    </div>
     </section>
   </main>
   <footer class="page__footer page-footer">

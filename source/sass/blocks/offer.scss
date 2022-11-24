@@ -1,0 +1,16 @@
+.offer {
+  background-image: url("../../img/background-offer.jpg");
+  background-color: rgba($basic-green, 0.85);
+}
+
+.offer__icon {
+  background-image: url("../../img/icon_gift.svg");
+  width: 78px;
+  height: 80px;
+}
+
+.offer__text {
+  font-family: $font-body;
+  @include font-line(16px, 20px);
+  color: $white;
+}

@@ -1,0 +1,9 @@
+.promo {
+  background-color: rgba($basic-green, 0.85);
+  background-image: url("../../img/background-promo.jpg");
+  color: $white;
+}
+.promo__text {
+  @include font-line(14px, 14px);
+  text-transform: uppercase;
+}

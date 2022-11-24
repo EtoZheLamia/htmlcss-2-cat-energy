@@ -1,0 +1,11 @@
+.site-menu {
+  list-style: none;
+}
+
+.site-menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  color: $black;
+  @include font-line(20px, 20px);
+  text-transform: uppercase;
+}

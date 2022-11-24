@@ -1,0 +1,11 @@
+.contacts__partnership {
+  @include font-line(16px, 20px);
+  text-transform: uppercase;
+  color: $very-dark;
+}
+
+.contacts__address {
+  font-family: $font-body;
+  @include font-line(14px, 20px);
+  color: $dark-grey;
+}

@@ -1,0 +1,28 @@
+.example {
+  background-color: $special-grey;
+}
+
+.example__text {
+  color: $dark-grey;
+  @include font-line(14px, 18px);
+  font-family: $font-body;
+}
+
+.example__number {
+  @include font-line(24px, 24px);
+  text-transform: uppercase;
+}
+
+.example__description {
+  margin-left: 0;
+  font-family: $font-body;
+  @include font-line(16px, 16px);
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-grey;
+}
+
+.example__spending {
+  @include font-line(14px, 20px);
+  text-transform: uppercase;
+}

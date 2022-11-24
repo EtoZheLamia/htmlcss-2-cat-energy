@@ -1,0 +1,21 @@
+.catalog-section__item {
+  background-color: $basic-grey;
+}
+.catalog-section__title {
+  text-transform: uppercase;
+  @include font-line(24px, 37px);
+  font-weight: 400;
+}
+
+.catalog-section__text {
+  color: $dark-grey;
+  font-family: $font-body;
+  @include font-line(14px, 18px);
+}
+
+.catalog-section__button {
+  text-decoration: none;
+  color: $black;
+  text-transform: uppercase;
+  @include font-line(16px, 16px);
+}

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог CAT ENERGY</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page__header page-header">
@@ -34,9 +35,9 @@
     </nav>
   </header>
   <main class="page__main page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <h1 class="page-main__primary-title">Каталог продукции</h1>
     <section class="page-main__section catalog">
-      <h2 class="visually-hidden">Список продукции</h2>
+      <h2 class="visually-hidden">Список продукции </h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -49,7 +50,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">700 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -62,7 +63,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">1000 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -75,7 +76,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">700 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -88,11 +89,11 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">1000 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
-          <img class="card__image" src="img/grecha_small.jpg.jpg" alt="Cat Energy PRO 500 г" width="68" height="86">
+          <img class="card__image" src="img/grecha_small.jpg" alt="Cat Energy PRO 500 г" width="68" height="86">
           <dl class="card__desc card-desc">
             <dt class="card-desc__title">Масса</dt>
             <dd class="card-desc__definition">500 г</dd>
@@ -101,7 +102,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">400 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -114,7 +115,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">700 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item card">
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -127,7 +128,7 @@
             <dt class="card-desc__title">Цена</dt>
             <dd class="card-desc__definition">500 Р.</dd>
           </dl>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog__item show-more">
           <p class="show-more__title"> Показать еще 100500 товаров</p>
@@ -137,43 +138,45 @@
       </ul>
     </section>
     <section class="page-main__section catalog-additional">
-      <h2 class="page-main__title">Дополнительные товары</h2>
+      <h2 class="catalog-additional__title">Дополнительные товары</h2>
       <ul class="catalog-additional__list">
         <li class="catalog-additional__item card-row">
           <h3 class="card-row__title">Сахарозаменитель</h3>
           <p class="card-row__quantity">1 упаковка (100 г)</p>
           <p class="card-row__price">200 Р.</p>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog-additional__item card-row">
           <h3 class="card-row__title">питьевая вода</h3>
           <p class="card-row__quantity">5 литров</p>
           <p class="card-row__price">50 Р.</p>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog-additional__item card-row">
           <h3 class="card-row__title">молоко</h3>
           <p class="card-row__quantity">1 литр</p>
           <p class="card-row__price">100 Р.</p>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
         <li class="catalog-additional__item card-row">
           <h3 class="card-row__title">витамины</h3>
           <p class="card-row__quantity">1 упаковка (30 г)</p>
           <p class="card-row__price">300 Р.</p>
-          <a class="card__button" href="#">заказать</a>
+          <a class="button card__button" href="#">заказать</a>
         </li>
       </ul>
       <div class="catalog-additional__promo offer">
-        <img class="offer__icon" src="img/icon_gift.svg" alt="Получи подарок" width="78" height="80">
+        <div class="offer__icon"></div>
         <p class="offer__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
     <section class="page-main__section contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__partnership">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="img/location.jpg" alt="Карта с адресом кэт энерджи" width="320" height="362">
+      <div class="page-main__section contacts-inner">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__partnership">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__map" src="img/location.jpg" alt="Карта с адресом кэт энерджи" width="320" height="362">
+    </div>
     </section>
   </main>
   <footer class="page__footer page-footer">

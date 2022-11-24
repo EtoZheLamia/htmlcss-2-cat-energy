@@ -1,0 +1,13 @@
+.card-row__title {
+  font-weight: 400;
+  @include font-line(16px, 16px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.card-row__quantity,
+.card-row__price {
+  font-family: $font-body;
+  @include font-line(14px, 14px);
+  color: $dark-grey;
+}

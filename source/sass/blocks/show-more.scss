@@ -1,0 +1,18 @@
+.show-more__title {
+  @include font-line(16px, 20px);
+  text-transform: uppercase;
+  color: $very-dark;
+}
+
+.show-more__desc {
+  font-family: $font-body;
+  @include font-line(12px, 16px);
+  color: $special-dark-grey;
+}
+
+.show-more__button{
+  background-color: $basic-grey;
+  text-decoration: none;
+  color: $dark-grey;
+  @include font-line(16px, 20px);
+}

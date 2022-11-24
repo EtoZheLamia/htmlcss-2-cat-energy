@@ -3,6 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
+@import "global/mixin.scss";
 
 // Blocks
 
@@ -27,3 +28,10 @@
 @import "blocks/show-more.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/social-list.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/card-desc.scss";
+@import "blocks/card-desc.scss";
+@import "blocks/contacts-inner.scss";
+@import "blocks/control-radio.scss";
+@import "blocks/control-checkbox.scss";

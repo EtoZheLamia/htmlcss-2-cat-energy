@@ -1,6 +1,5 @@
-.field__lead,
-.field__input {
+.control-checkbox__lead {
   @include font-line(16px, 18px);
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $black;
 }

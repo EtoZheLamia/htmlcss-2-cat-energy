@@ -1,0 +1,9 @@
+.process__list {
+  list-style: none;
+}
+
+.process__text {
+  font-family: $font-body;
+  @include font-line(14px, 18px);
+  color: $dark-grey;
+}

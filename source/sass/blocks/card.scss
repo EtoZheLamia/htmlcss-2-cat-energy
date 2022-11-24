@@ -1,0 +1,6 @@
+.card__title {
+  font-weight: 400;
+  @include font-line(16px,20px);
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
