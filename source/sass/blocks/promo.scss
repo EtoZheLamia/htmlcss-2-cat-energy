@@ -1,9 +1,47 @@
 .promo {
   background-color: rgba($basic-green, 0.85);
   background-image: url("../../img/background-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: $white;
+  @media (min-width:$tablet-width) {
+    background-image:none;
+    background-color: $white;
+    color: $black;
+  }
+  @media (min-width:$desktop-width) {
+    background-image:none;
+    background-color: transparent;
+  }
+}
+
+.promo__inner {
+  margin-bottom: 20px;
+  @media (min-width:$tablet-width){
+    margin-left: 117px;
+    margin-right: 79px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
 }
 .promo__text {
   @include font-line(14px, 14px);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+  @media (min-width: $tablet-width) {
+    @include font-line(20px, 20px);
+    text-align: left;
+    margin-bottom: 49px;
+  }
+  @media (min-width: $tablet-width) {
+    @include font-line(20px, 20px);
+    text-align: left;
+    margin-bottom: 52px;
+  }
 }

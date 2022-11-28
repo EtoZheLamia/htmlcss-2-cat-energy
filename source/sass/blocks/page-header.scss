@@ -1,0 +1,41 @@
+.page-header__nav {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 30px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 53px auto;
+    width: 1220px;
+  }
+}
+
+.page-header__bar {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  padding: 10px 20px 17px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.page-header__menu {
+  display: none;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+.page-header__toogle {
+  justify-self: end;
+  width: 24px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

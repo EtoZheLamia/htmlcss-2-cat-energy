@@ -1,17 +1,22 @@
-.page-main {
-  margin: 0 auto;
-}
-
-.page-main__title {
-  font-weight: 400;
-  @include font-line(36px,40px);
-}
-
 .page-main__primary-title {
   font-weight: 400;
   @include font-line(36px, 36px);
-}
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  @media (min-width: $tablet-width){
+    @include font-line(60px, 60px);
+    padding-top: 63px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
+  @media (min-width: $desktop-width){
+    margin-bottom: 29px;
+  }
+  }
 
 .page-main__subtitle {
   @include font-line(14px, 18px);
 }
+

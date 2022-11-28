@@ -1,0 +1,10 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  @media (min-width: $tablet-width) {
+    padding: 5px;
+    border-bottom: none;
+    gap: 22px;
+  }
+}

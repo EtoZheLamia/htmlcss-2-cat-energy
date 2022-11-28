@@ -1,17 +1,19 @@
-@font-face {
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff") format("woff"),
-       url("../../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Oswald', sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("../../fonts/oswaldregular.woff") format("woff"),
+//        url("../../fonts/oswaldregular.woff2") format("woff2");
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff") format("woff"),
-       url("../../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Oswald', sans-serif;
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("../../fonts/oswaldmedium.woff") format("woff"),
+//        url("../../fonts/oswaldmedium.woff2") format("woff2");
+//   font-display: swap;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');

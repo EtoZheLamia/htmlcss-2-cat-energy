@@ -1,11 +1,45 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__inner {
+  margin: 0 20px;
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    column-gap: 296px;
+    padding: 56px 40px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 56px 80px;
+    column-gap: 87px;
+    margin: 0;
+    width: 565px;
+    position: absolute;
+    background-color: $white;
+    top: 95px;
+    left: 110px;
+  }
+}
+
 .contacts__partnership {
   @include font-line(16px, 20px);
   text-transform: uppercase;
   color: $very-dark;
+  margin: 0;
+  @media (min-width: $tablet-width){
+    @include font-line(20px, 26px);
+  }
 }
 
 .contacts__address {
   font-family: $font-body;
   @include font-line(14px, 20px);
   color: $dark-grey;
+  margin: 0;
+  @media (min-width: $tablet-width){
+    @include font-line(16px, 20px);
+  }
 }

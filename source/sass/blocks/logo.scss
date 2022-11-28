@@ -1,0 +1,15 @@
+.logo {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  align-items:center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 174px;
+    justify-content: space-between;
+  }
+}
+
+.logo__signature {
+  justify-self: center;
+}
+

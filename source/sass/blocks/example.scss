@@ -1,11 +1,78 @@
 .example {
-  background-color: $special-grey;
+  @media (max-width: $mobile-width-only){
+    background-color: $special-grey;
+  }
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(180deg, transparent 576px, $special-grey 576px);
+  }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-image: linear-gradient(180deg, transparent 179px, $special-grey 179px);
+  }
+}
+
+.example__inner {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  @media (min-width: $tablet-width) {
+    margin: 0 31px;
+    gap: 80px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 193px;
+  }
+}
+
+.example__content {
+  padding-top: 25px;
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+}
+
+.example__compare {
+  padding-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.example__title {
+  font-family: $font-heading;
+  font-weight: 400;
+  @include font-line(36px, 40px);
+  margin-top: 0;
+  margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    @include font-line(60px, 60px);
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   color: $dark-grey;
   @include font-line(14px, 18px);
   font-family: $font-body;
+  margin-top: 0;
+  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    @include font-line(16px, 24px);
+    margin-bottom: 54px;
+  }
+  @media (min-width: $desktop-width) {
+    @include font-line(16px, 24px);
+    margin-bottom: 69px;
+  }
 }
 
 .example__number {
@@ -25,4 +92,8 @@
 .example__spending {
   @include font-line(14px, 20px);
   text-transform: uppercase;
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    @include font-line(20px, 20px);
+  }
 }
