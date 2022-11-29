@@ -9,18 +9,4 @@
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
-  @media (min-width:$desktop-width) {
-    position: relative;
-    &::before{
-      content:'';
-      position: absolute;
-      width: 50%;
-      height: 694px;
-      top: 0;
-      right: 0;
-      background-image: url("../../img/background-promo-desktop.jpg");
-      background-color: rgba($basic-green, 85%);
-      z-index: -1;
-    }
-  }
 }

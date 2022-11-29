@@ -1,6 +1,28 @@
+.card {
+  padding: 8px 20px 11px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 36px 39px;
+    background-image: linear-gradient(180deg, transparent 73px, #F2F2F2 73px);
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 35px 40px 30px;
+    background-image: linear-gradient(180deg, transparent 80px, #F2F2F2 80px);
+  }
+}
+
 .card__title {
   font-weight: 400;
   @include font-line(16px,20px);
   color: $special-dark-grey;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.card__button {
+  grid-column: 1/-1;
 }

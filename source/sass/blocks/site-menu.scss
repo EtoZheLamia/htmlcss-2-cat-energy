@@ -41,7 +41,6 @@
   }
   @media (min-width: $desktop-width){
     @include font-line(20px, 30px);
-    color: $white;
     padding-top: 16px;
     padding-bottom: 8px;
   }

@@ -1,8 +1,36 @@
+.card-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 2fr 244px;
+    column-gap: 41px;
+  }
+}
+
 .card-row__title {
   font-weight: 400;
   @include font-line(16px, 16px);
   text-transform: uppercase;
+  margin: 0;
   color: $special-dark-grey;
+  @media (min-width: $tablet-width) {
+    @include font-line(20px, 20px);
+  }
+}
+
+.card-row__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+  }
 }
 
 .card-row__quantity,
@@ -10,4 +38,22 @@
   font-family: $font-body;
   @include font-line(14px, 14px);
   color: $dark-grey;
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    @include font-line(16px, 20px);
+    justify-self: end;
+  }
+}
+
+.card-row__quantity {
+  @media (min-width: $tablet-width) {
+    @include font-line(16px, 20px);
+    justify-self: start;
+  }
+}
+
+.card-row .card__button {
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+  }
 }
