@@ -3,4 +3,7 @@
   @include font-line(16px, 18px);
   text-transform: uppercase;
   color: $dark-grey;
+  @media (min-width: $tablet-width){
+    @include font-line(20px, 30px);
+  }
 }
