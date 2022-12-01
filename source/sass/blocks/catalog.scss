@@ -1,6 +1,6 @@
 .catalog__inner {
   @media (min-width: $desktop-width){
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     margin-bottom: 76px;
   }

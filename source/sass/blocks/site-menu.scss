@@ -44,4 +44,16 @@
     padding-top: 16px;
     padding-bottom: 8px;
   }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-menu__link--current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+  }
 }

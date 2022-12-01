@@ -7,6 +7,12 @@
     width: 174px;
     justify-content: space-between;
   }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__signature {

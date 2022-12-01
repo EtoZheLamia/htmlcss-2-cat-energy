@@ -21,10 +21,11 @@
     gap: 80px;
   }
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     flex-direction: row;
     gap: 193px;
+    padding-bottom: 65px;
   }
 }
 
@@ -42,6 +43,7 @@
   }
   @media (min-width: $desktop-width) {
     padding-bottom: 75px;
+    min-width: 591px;
   }
 }
 
@@ -53,6 +55,7 @@
   margin-bottom: 40px;
   @media (min-width: $tablet-width) {
     @include font-line(60px, 60px);
+    margin-bottom: 63px;
   }
   @media (min-width: $desktop-width) {
     margin-bottom: 146px;
@@ -75,25 +78,94 @@
   }
 }
 
+.example__statistics {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 34px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 42px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 42px;
+    margin-right: 70px;
+  }
+}
+
 .example__number {
   @include font-line(24px, 24px);
   text-transform: uppercase;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    @include font-line(30px, 37px);
+  }
 }
 
 .example__description {
   margin-left: 0;
   font-family: $font-body;
-  @include font-line(16px, 16px);
-  font-size: 14px;
-  line-height: 14px;
+  @include font-line(12px, 12px);
   color: $dark-grey;
+  width: 87px;
+  text-transform: none;
+  text-align: center;
+  background-color: $special-grey;
+  position: absolute;
+  transform: translate(50%);
+  bottom: -17px;
+  right: 50%;
+  @media (min-width: $tablet-width) {
+    @include font-line(14px, 14px);
+    background-color: $white;
+    width: auto;
+    width: 115px;
+    bottom: -6px;
+    br {
+      display: none;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    background-color: $special-grey;
+  }
+}
+
+.example__number--days .example__description{
+  @media (min-width: $tablet-width) {
+    width: 141px;
+}
 }
 
 .example__spending {
   @include font-line(14px, 20px);
   text-transform: uppercase;
   margin: 0;
+  grid-column: 1/-1;
+  text-align: center;
   @media (min-width: $tablet-width) {
     @include font-line(20px, 20px);
+    grid-column: auto;
+    text-align: right;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
+
+

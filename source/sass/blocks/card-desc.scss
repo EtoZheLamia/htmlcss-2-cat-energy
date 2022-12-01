@@ -1,5 +1,11 @@
 .card-desc {
   margin: 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  row-gap: 6px;
+  @media (min-width: $tablet-width){
+    row-gap: 0;
+  }
 }
 
 .card-desc__title,
@@ -8,4 +14,20 @@
   @include font-line(12px, 16px);
   color: $dark-grey;
   margin: 0;
+  @media (min-width: $tablet-width){
+    border-bottom: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    @include font-line(16px, 16px);
+  }
+}
+
+
+.card-desc__definition {
+  justify-self: end;
+  @media (min-width: $tablet-width){
+    justify-self: stretch;
+    text-align: right;
+  }
 }

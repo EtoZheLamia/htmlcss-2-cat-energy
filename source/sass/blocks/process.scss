@@ -3,12 +3,13 @@
   margin-bottom: 49px;
   @media (min-width: $tablet-width){
     padding: 0 30px;
+    padding-right: 105px;
     padding-bottom: 47px;
     margin-bottom: 0;
     border-bottom: 1px solid #E6E6E6;
   }
   @media (min-width: $desktop-width){
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0;
     border-bottom: none;
@@ -23,7 +24,7 @@
   margin-bottom: 40px;
   @media (min-width: $tablet-width) {
     @include font-line(60px, 60px);
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 
@@ -37,8 +38,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 137px;
+    row-gap: 77px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 94px;
+    row-gap: auto;
   }
 }
 
@@ -49,8 +55,70 @@
   margin: 0;
   @media (min-width: $tablet-width) {
     @include font-line(16px, 24px);
+    padding-bottom: 57px;
+  }
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+}
+}
+
+.process__item {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: $basic-green;
+  }
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto;
+    gap: 31px;
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        font-family: $font-heading;
+        @include font-line(280px, 280px);
+        font-weight: 400;
+        color: $basic-grey;
+        z-index: -1;
+        width: 134px;
+        height: 280px;
+    }
   }
 }
 
+@media (min-width: $tablet-width) {
+  .process__item--nutrient {
+    &::after {
+      content: '1';
+  }
+  }
+  .process__item--powder {
+    &::after {
+      content: '2';
+    }
+  }
+  .process__item--replacement {
+    &::after {
+      content: '3';
+    }
+  }
+  .process__item--month {
+    &::after {
+      content: '4';
+  }
+}
 
-
+}

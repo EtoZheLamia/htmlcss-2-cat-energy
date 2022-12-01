@@ -2,16 +2,30 @@
   padding: 8px 20px 11px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 13px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding: 0 36px 39px;
-    background-image: linear-gradient(180deg, transparent 73px, #F2F2F2 73px);
+    background-image: linear-gradient(180deg, transparent 81px, #F2F2F2 81px);
   }
   @media (min-width: $desktop-width) {
     padding: 0 35px 40px 30px;
-    background-image: linear-gradient(180deg, transparent 80px, #F2F2F2 80px);
+    row-gap: 33px;
+  }
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  row-gap: 18px;
+  @media (min-width: $tablet-width) {
+    row-gap: 21px;
+    margin-top: 34px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
   }
 }
 
@@ -21,8 +35,44 @@
   color: $special-dark-grey;
   text-transform: uppercase;
   margin: 0;
+  grid-row: 1/2;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    grid-column: 1/-1;
+    @include font-line(20px,24px);
+    width: 136px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    @include font-line(20px,21px);
+  }
+}
+
+.card__desc {
+  grid-row: 2/3;
+  grid-column: 1/-1;
 }
 
 .card__button {
   grid-column: 1/-1;
+  margin-bottom: 14px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.card__image{
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 196px;
+  }
 }

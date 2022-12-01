@@ -8,16 +8,16 @@
 </head>
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__nav">
+    <nav class="page-header__nav page-header__toogle--closed page-header__toogle--nojs">
       <div class="page-header__bar">
-        <a class="page-header__logo logo">
+        <a class="page-header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип CAT ENERGY" width="33" height="38">
           <img class="logo__signature" src="img/logo-sign.svg" alt="CAT ENERGY" width="101" height="18">
         </a>
-        <button class="page-header__toogle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
+      <button class="page-header__toogle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="page-header__menu site-menu">
         <li class="site-menu__item">
           <a class="site-menu__link" href="index.html">
@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--current" href="#">
+          <a class="site-menu__link site-menu__link--current" href="">
             Каталог продукции
           </a>
         </li>
@@ -149,8 +149,8 @@
             <a class="button card__button" href="#">заказать</a>
           </li>
           <li class="catalog__item show-more">
-            <p class="show-more__title"> Показать еще 100500 товаров</p>
-            <p class="show-more__desc"> На самом деле вкусов гораздо больше!</p>
+            <p class="show-more__title"> Показать еще<br> 100500 товаров</p>
+            <p class="show-more__desc"> На самом деле вкусов<br> гораздо больше!</p>
             <a class="show-more__button" href="#">показать все</a>
           </li>
         </ul>
@@ -255,5 +255,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/mobileToggle.js"></script>
 </body>
 </html>

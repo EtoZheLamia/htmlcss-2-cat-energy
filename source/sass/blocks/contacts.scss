@@ -1,6 +1,14 @@
 .contacts {
   position: relative;
-  background-color: $basic-grey;
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 105px;
+  }
 }
 
 .contacts__inner {
@@ -18,7 +26,6 @@
     column-gap: 87px;
     margin: 0;
     width: 565px;
-    position: absolute;
     background-color: $white;
     top: 95px;
     left: 110px;
@@ -42,5 +49,14 @@
   margin: 0;
   @media (min-width: $tablet-width){
     @include font-line(16px, 20px);
+  }
+}
+
+.contacts__map {
+  @media (min-width: $desktop-width){
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
   }
 }

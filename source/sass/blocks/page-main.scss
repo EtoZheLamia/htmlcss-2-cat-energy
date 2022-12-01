@@ -5,11 +5,13 @@
   text-align: center;
   padding-top: 27px;
   margin-bottom: 25px;
+  min-height: 72px;
   @media (min-width: $tablet-width){
     @include font-line(60px, 60px);
     padding-top: 40px;
     text-align: left;
     margin-bottom: 41px;
+    min-height: 120px;
   }
   @media (min-width: $desktop-width){
     margin-bottom: 29px;

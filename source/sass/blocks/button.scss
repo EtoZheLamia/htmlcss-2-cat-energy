@@ -4,7 +4,11 @@
   cursor: pointer;
   text-decoration: none;
   border: none;
+  @include font-line(16px,20px);
   &:hover {
     background-color: $hover-green;
+  }
+  &:active {
+    color: rgba($white,0.3)
   }
 }
