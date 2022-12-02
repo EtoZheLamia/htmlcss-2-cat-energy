@@ -1,9 +1,57 @@
 .field__lead,
 .field__input {
   @include font-line(16px, 18px);
+  font-family: $font-heading;
   text-transform: uppercase;
   color: $dark-grey;
   @media (min-width: $tablet-width){
     @include font-line(20px, 30px);
+  }
+}
+
+
+.field__input {
+  border: none;
+  outline: 1px solid #E7E7E7;
+  margin: 0;
+  padding: 13px 15px;
+  padding-right: 0;
+  box-sizing: border-box;
+  width: 100%;
+  &:hover {
+    outline: 1px solid #CDCDCD;
+  }
+  &:focus {
+    border: none;
+    outline: 2px solid #444444;
+  }
+  &:invalid {
+    outline: 2px solid #FF8282;
+  }
+}
+
+
+.form__group--owner  {
+  .field__input{
+    padding-right: 37px;
+  }
+  .field__input[type="email"] {
+    background-image: url("../../img/svg_icon/icon_email.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+    @media (min-width: $tablet-width) {
+      background-position-x: calc(100% - 19px);
+    }
+  }
+
+  .field__input[type="tel"] {
+    background-image: url("../../img/svg_icon/icon_phone.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 13px);
+    background-position-y: center;
+    @media (min-width: $tablet-width) {
+      background-position-x: calc(100% - 17px);
+    }
   }
 }

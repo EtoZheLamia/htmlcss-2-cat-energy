@@ -1,5 +1,46 @@
+// Резервируем отступы для кастомных чекбоксов
+.control-radio {
+  display: grid;
+  gap: 15px;
+  align-items: center;
+  @media (min-width:$tablet-width){
+    gap: 20px;
+  }
+}
+
+// Задаем позицию и стили для чекбоксов
+.control-mark {
+  position: relative;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  &:hover {
+    border: 1px solid #BABABA;
+  }
+}
+
+
+.control-radio__input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  content: "";
+}
+
+
 .control-radio__lead {
   @include font-line(16px, 18px);
   text-transform: uppercase;
   color: $special-dark-grey;
+  @media (min-width: $tablet-width){
+    @include font-line(20px, 30px);
+  }
 }

@@ -1,5 +1,42 @@
+// Резервируем отступы для кастомных чекбоксов
+.control-radio {
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  @media (min-width:$tablet-width){
+    gap: 19px;
+  }
+}
+
+// Задаем позицию и стили для чекбоксов
+.control-mark--checkbox {
+  position: relative;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  border: 1px solid #CDCDCD;
+  &:hover {
+    border: 1px solid #BABABA;
+  }
+}
+
+.control-checkbox__input[type="checkbox"]:checked + .control-mark--checkbox::after {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/svg_icon/tick.svg") ;
+  content: " ";
+}
+
 .control-checkbox__lead {
   @include font-line(16px, 18px);
   text-transform: uppercase;
   color: $black;
+  @media (min-width: $tablet-width){
+    @include font-line(20px, 30px);
+  }
 }

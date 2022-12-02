@@ -52,7 +52,11 @@
   }
 }
 
-.card-row .card__button {
+.card-row__button {
+  padding: 10px;
+  @media (min-width: $tablet-width) {
+    grid-column:1/-1;
+  }
   @media (min-width: $desktop-width) {
     grid-column: 3/-1;
   }

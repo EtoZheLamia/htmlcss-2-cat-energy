@@ -4,6 +4,8 @@
   cursor: pointer;
   text-decoration: none;
   border: none;
+  text-transform: uppercase;
+  text-align: center;
   @include font-line(16px,20px);
   &:hover {
     background-color: $hover-green;
