@@ -1,10 +1,33 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   padding: 22px 0;
+  align-items: center;
+  text-decoration: none;
+  color: $dark-grey;
   @media (min-width: $tablet-width) {
     padding: 5px;
     border-bottom: none;
     gap: 22px;
   }
+  &:hover {
+    opacity: 0.8;
+    .copyright__icon{
+      fill: $basic-green;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-family: $font-body;
+  @include font-line (16px, 18px)
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
 }
