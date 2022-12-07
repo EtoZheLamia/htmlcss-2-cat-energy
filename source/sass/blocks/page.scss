@@ -21,9 +21,14 @@
       height: 694px;
       top: 0;
       right: 0;
-      background-image: url("../../img/background-promo-desktop.jpg");
+      background-image: url("../../img/index/background-promo-desktop.jpg");
       background-repeat: no-repeat;
       z-index: -1;
+      background-color: rgba(104, 183, 56, 0.85);
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index/background-promo-desktop@2x.png");
+        background-size: cover;
+      }
     }
   }
 }

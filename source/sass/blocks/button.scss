@@ -7,6 +7,9 @@
   text-transform: uppercase;
   text-align: center;
   @include font-line(16px,20px);
+  @media (min-width: $tablet-width){
+    @include font-line(20px,20px);
+  }
   &:hover {
     background-color: $hover-green;
   }

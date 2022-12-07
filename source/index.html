@@ -46,7 +46,11 @@
       <div class="promo__inner">
         <h1 class="page-main__primary-title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/promo-image.png" alt="Демонстрация продукта" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/index/promo-image-desktop.png 1x, img/index/promo-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/promo-image-tablet.png 1x, img/index/promo-image-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index/promo-image-mobile.png" srcset="img/index/promo-image-mobile@2x.png 2x" alt="Демонстрация продукта">
+        </picture>
         <a class="button promo__button" href="form.html">подобрать программу</a>
       </div>
     </header>
@@ -108,15 +112,15 @@
         </div>
         <div class="example__compare">
           <div class="example__image">
-            <img src="img/cat-fat.png" alt="Кот до употребления кэт энерджи" width="280" height="232">
-            <img src="img/cat-skinny.png" alt="Кот после употребления кэт энерджи" width="280" height="232">
+            <div class="example_demo example_demo--before"></div>
+            <div class="example_demo example_demo--after"></div>
           </div>
           <div class="example__control">
-            <span class="example__control-text">Было</span>
+            <button class="example__control-text example__control-text--before" type="button">Было</button>
             <label class="example__label">
               <input type="range" class="example__range" min="0" max="100" step="1">
             </label>
-            <span class="example__control-text">Стало</span>
+            <button class="example__control-text example__control-text--after" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -166,5 +170,6 @@
     </div>
   </footer>
   <script src="js/mobileToggle.js"></script>
+  <script src="js/compare.js"></script>
 </body>
 </html>
