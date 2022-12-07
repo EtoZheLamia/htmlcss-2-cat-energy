@@ -1,0 +1,12 @@
+.logo {
+  @media (max-width: $breakpoint-small-down) {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.logo__sign {
+  justify-self: center;
+}
