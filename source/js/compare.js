@@ -3,8 +3,8 @@
   const compare = document.querySelector('.example__compare');
   const btnBefore = compare.querySelector('.example__control-text--before');
   const btnAfter = compare.querySelector('.example__control-text--after');
-  const imgBefore = compare.querySelector('.example_demo--before');
-  const imgAfter = compare.querySelector('.example_demo--after');
+  const imgBefore = compare.querySelector('.example__demo--before');
+  const imgAfter = compare.querySelector('.example__demo--after');
   const range = compare .querySelector('.example__range');
 
   range.addEventListener('input', function() {

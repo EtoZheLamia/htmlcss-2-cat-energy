@@ -179,7 +179,7 @@
   }
 }
 
-.example_demo {
+.example__demo {
   position: absolute;
   height: 100%;
   top: 0;
@@ -188,7 +188,7 @@
   background-repeat: no-repeat;
 }
 
-.example_demo--before {
+.example__demo--before {
   background-image: url("../../img/index/cat-fat.png");
   background-position-x: -18px;
   background-size: cover;
@@ -202,7 +202,7 @@
   }
 }
 
-.example_demo--after {
+.example__demo--after {
   background-image: url("../../img/index/cat-skinny.png");
   background-position-x: -18px;
   direction: rtl;

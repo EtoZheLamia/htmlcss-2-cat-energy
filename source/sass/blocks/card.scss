@@ -16,6 +16,25 @@
   }
 }
 
+.card__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image {
+  width: 140px;
+  height: 112px;
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+  @media (min-width: $desktop-width){
+    width: 172px;
+    height: 196px;
+  }
+}
+
 .card__content {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -63,14 +82,5 @@
   }
   @media (min-width: $desktop-width) {
     margin: 0;
-  }
-}
-
-.card__image{
-  @media (min-width: $tablet-width) {
-    height: 200px;
-  }
-  @media (min-width: $desktop-width) {
-    height: 196px;
   }
 }
