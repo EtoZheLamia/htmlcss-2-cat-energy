@@ -47,9 +47,12 @@
         <h1 class="page-main__primary-title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture>
+          <source type="image/webp" media="(min-width: 1220px)" srcset="img/index/promo-image-desktop.webp 1x, img/index/promo-image-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/promo-image-tablet.webp 1x, img/index/promo-image-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index/promo-image-mobile.webp 1x, img/index/promo-image-mobilet@2x.webp 2x">
           <source media="(min-width: 1220px)" srcset="img/index/promo-image-desktop.png 1x, img/index/promo-image-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index/promo-image-tablet.png 1x, img/index/promo-image-tablet@2x.png 2x">
-          <img class="promo__image" src="img/index/promo-image-mobile.png" srcset="img/index/promo-image-mobile@2x.png 2x" alt="Демонстрация продукта">
+          <source  media="(min-width: 768px)" srcset="img/index/promo-image-tablet.png 1x, img/index/promo-image-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index/promo-image-mobile.png" srcset="img/index/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Демонстрация продукта">
         </picture>
         <a class="button promo__button" href="form.html">подобрать программу</a>
       </div>

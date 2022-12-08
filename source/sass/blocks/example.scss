@@ -189,7 +189,10 @@
 }
 
 .example__demo--before {
-  background-image: url("../../img/index/cat-fat.png");
+  background-image: url("../../img/index/cat-fat.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/cat-fat@2x.webp")
+  }
   background-position-x: -18px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,7 +206,10 @@
 }
 
 .example__demo--after {
-  background-image: url("../../img/index/cat-skinny.png");
+  background-image: url("../../img/index/cat-skinny.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/cat-skinny@2x.webp")
+  }
   background-position-x: -18px;
   direction: rtl;
   left: auto;

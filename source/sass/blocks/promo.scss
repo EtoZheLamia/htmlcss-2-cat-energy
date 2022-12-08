@@ -1,10 +1,10 @@
 .promo {
-  background-image: url("../../img/index/background-promo-mobile.jpg");
+  background-image: url("../../img/index/background-promo-mobile.webp");
   background-repeat: no-repeat;
   background-position: top;
   color: $white;
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index/background-promo-mobile@2x.png");
+    background-image: url("../../img/index/background-promo-mobile@2x.webp");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 320px auto;

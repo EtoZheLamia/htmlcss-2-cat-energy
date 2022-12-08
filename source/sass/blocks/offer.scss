@@ -1,7 +1,7 @@
 .offer {
-  background-image: url("../../img/catalog/background-offer-mobile.jpg");
+  background-image: url("../../img/catalog/WebP/background-offer-mobile.webp");
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog/background-offer-mobile@2x.png");
+    background-image: url("../../img/catalog/WebP/background-offer-mobile@2x.png");
     background-size: 280px auto;
   }
   background-repeat: no-repeat;
@@ -10,9 +10,9 @@
   padding: 58px 60px 43px;
   background-size: cover;
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/catalog/background-offer-tablet.jpg");
+    background-image: url("../../img/catalog/WebP/background-offer-tablet.webp");
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog/background-offer-tablet@2x.png");
+    background-image: url("../../img/catalog/WebP/background-offer-tablet@2x.png");
     background-size: 100% auto;
   }
     padding: 57px 77px 60px;
@@ -21,9 +21,9 @@
     align-items: center;
   }
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/catalog/background-offer-desktop.jpg");
+    background-image: url("../../img/catalog/WebP/background-offer-desktop.webp");
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/catalog/background-offer-desktop@2x.png");
+      background-image: url("../../img/catalog/WebP/background-offer-desktop@2x.png");
       background-size: 100% auto;
     }
     display: grid;

@@ -23,7 +23,7 @@
     height: 694px;
     top: 0;
     right: 0;
-    background-image: url("../../img/index/background-promo-desktop.jpg");
+    background-image: url("../../img/index/background-promo-desktop.webp");
     background-repeat: no-repeat;
     z-index: -1;
     background-color: rgba(104, 183, 56, 0.85);
@@ -31,7 +31,7 @@
 }
 @media (min-width: 1220px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1220px) and (min-resolution: 2dppx) {
   .page__body--index::before {
-    background-image: url("../../img/index/background-promo-desktop@2x.png");
+    background-image: url("../../img/index/background-promo-desktop@2x.webp");
     background-size: cover;
   }
 }
@@ -169,10 +169,6 @@
   justify-content: center;
 }
 
-.card__image {
-  width: 140px;
-  height: 112px;
-}
 @media (min-width: 768px) {
   .card__image {
     width: 168px;
@@ -949,11 +945,16 @@
 }
 
 .example__demo--before {
-  background-image: url("../../img/index/cat-fat.png");
+  background-image: url("../../img/index/cat-fat.webp");
   background-position-x: -18px;
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .example__demo--before {
+    background-image: url("../../img/index/cat-fat@2x.webp");
+  }
 }
 @media (min-width: 768px) {
   .example__demo--before {
@@ -967,13 +968,18 @@
 }
 
 .example__demo--after {
-  background-image: url("../../img/index/cat-skinny.png");
+  background-image: url("../../img/index/cat-skinny.webp");
   background-position-x: -18px;
   direction: rtl;
   left: auto;
   right: 0;
   transform: scaleX(-1);
   width: 50%;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .example__demo--after {
+    background-image: url("../../img/index/cat-skinny@2x.webp");
+  }
 }
 @media (min-width: 768px) {
   .example__demo--after {
@@ -1490,7 +1496,7 @@
 }
 
 .offer {
-  background-image: url("../../img/catalog/background-offer-mobile.jpg");
+  background-image: url("../../img/catalog/WebP/background-offer-mobile.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(104, 183, 56, 0.85);
@@ -1499,13 +1505,13 @@
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/catalog/background-offer-mobile@2x.png");
+    background-image: url("../../img/catalog/WebP/background-offer-mobile@2x.png");
     background-size: 280px auto;
   }
 }
 @media (min-width: 768px) {
   .offer {
-    background-image: url("../../img/catalog/background-offer-tablet.jpg");
+    background-image: url("../../img/catalog/WebP/background-offer-tablet.webp");
     padding: 57px 77px 60px;
     display: grid;
     grid-template-columns: 60% 1fr;
@@ -1514,13 +1520,13 @@
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/catalog/background-offer-tablet@2x.png");
+    background-image: url("../../img/catalog/WebP/background-offer-tablet@2x.png");
     background-size: 100% auto;
   }
 }
 @media (min-width: 1220px) {
   .offer {
-    background-image: url("../../img/catalog/background-offer-desktop.jpg");
+    background-image: url("../../img/catalog/WebP/background-offer-desktop.webp");
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -1532,7 +1538,7 @@
 }
 @media (min-width: 1220px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1220px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url("../../img/catalog/background-offer-desktop@2x.png");
+    background-image: url("../../img/catalog/WebP/background-offer-desktop@2x.png");
     background-size: 100% auto;
   }
 }
@@ -1915,14 +1921,14 @@
 }
 
 .promo {
-  background-image: url("../../img/index/background-promo-mobile.jpg");
+  background-image: url("../../img/index/background-promo-mobile.webp");
   background-repeat: no-repeat;
   background-position: top;
   color: #FFFFFF;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .promo {
-    background-image: url("../../img/index/background-promo-mobile@2x.png");
+    background-image: url("../../img/index/background-promo-mobile@2x.webp");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 320px auto;
