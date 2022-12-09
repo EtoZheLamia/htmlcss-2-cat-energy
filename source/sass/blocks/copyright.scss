@@ -12,9 +12,7 @@
   }
   &:hover {
     opacity: 0.8;
-    .copyright__icon{
-      fill: $basic-green;
-    }
+    color: $basic-green;
   }
   &:active {
     opacity: 0.3;

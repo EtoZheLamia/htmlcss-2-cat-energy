@@ -685,9 +685,7 @@
 }
 .copyright__link:hover {
   opacity: 0.8;
-}
-.copyright__link:hover .copyright__icon {
-  fill: #68B738;
+  color: #68B738;
 }
 .copyright__link:active {
   opacity: 0.3;
@@ -1329,6 +1327,7 @@
     max-width: 1220px;
     margin: 0 auto;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     margin-bottom: 65px;
@@ -1472,16 +1471,11 @@
   line-height: 16px;
 }
 
-.logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .logo {
-    display: flex;
-    width: 174px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 .logo:hover {
@@ -1493,6 +1487,58 @@
 
 .logo__signature {
   justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .logo__signature,
+.logo__image {
+    display: none;
+  }
+}
+
+@media (min-width: 1220px), (max-width: 767px) {
+  .logo__tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 1220px) {
+  .logo__desktop {
+    display: none;
+  }
+}
+
+.logo__vk {
+  width: 23px;
+  height: 16px;
+}
+@media (min-width: 768px) {
+  .logo__vk {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.logo__inst {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 768px) {
+  .logo__inst {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.logo__fb {
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+  .logo__fb {
+    width: 28px;
+    height: 33px;
+  }
 }
 
 .offer {
@@ -1544,7 +1590,7 @@
 }
 
 .offer__icon {
-  background-image: url("../../img/icon_gift.svg");
+  background-image: url("../../img/svg_icon/icon_gift.svg");
   width: 78px;
   height: 80px;
   margin: 0 auto;
@@ -1593,6 +1639,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 55px 20px;
+    align-items: center;
   }
 }
 @media (min-width: 1220px) {
@@ -2050,7 +2097,7 @@
 }
 
 .show-more {
-  padding: 78px 20px 25px;
+  padding: 25px 20px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2058,7 +2105,7 @@
 @media (min-width: 768px) {
   .show-more {
     padding: 37px;
-    padding-top: 161px;
+    padding-top: 52px;
     outline: 2px solid #F2F2F2;
     margin-top: 81px;
     justify-content: space-between;
@@ -2066,8 +2113,43 @@
 }
 @media (min-width: 1220px) {
   .show-more {
-    padding: 161px 37px 41px;
+    padding: 51px 37px 41px;
   }
+}
+
+.show-more__button-plus {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 23px;
+}
+@media (min-width: 768px) {
+  .show-more__button-plus {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+  }
+}
+
+.show-more__button-icon {
+  width: 30px;
+  height: 30px;
+  stroke: #D3D3D3;
+}
+@media (min-width: 768px) {
+  .show-more__button-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+.show-more__button-icon:hover {
+  stroke: #EBEBEB;
+}
+.show-more__button-icon:active {
+  opacity: 0.3;
 }
 
 .show-more__title {
@@ -2083,16 +2165,6 @@
   .show-more__title br {
     display: none;
   }
-}
-.show-more__title::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(../../img/plus.svg);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: -40px;
 }
 @media (min-width: 768px) {
   .show-more__title {
@@ -2222,6 +2294,7 @@
   margin: 0;
   padding: 23px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #D9D9D9;
@@ -2237,30 +2310,13 @@
   padding-right: 35px;
 }
 
-.social-list__link--instagram svg,
-.social-list__link--vkontakte svg {
-  fill: #666;
+.social-list__link {
+  color: #666666;
 }
-.social-list__link--instagram svg:hover,
-.social-list__link--vkontakte svg:hover {
-  fill: #68B738;
+.social-list__link:hover {
+  color: #68B738;
 }
-.social-list__link--instagram svg:active,
-.social-list__link--vkontakte svg:active {
-  opacity: 0.3;
-}
-
-.social-list__link--facebook svg {
-  stroke: #666;
-  stroke-width: 1.1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-}
-.social-list__link--facebook svg:hover {
-  stroke: #68B738;
-}
-.social-list__link--facebook svg:active {
+.social-list__link:active {
   opacity: 0.3;
 }
 

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 23px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #D9D9D9;
@@ -16,28 +17,15 @@
   padding-right: 35px;
 }
 
-.social-list__link--instagram svg,
-.social-list__link--vkontakte svg{
-  fill: #666;
+.social-list__link {
+  color: #666666;
   &:hover {
-    fill: $basic-green;
+    color: $basic-green;
   }
   &:active {
     opacity: 0.3;
   }
 }
 
-.social-list__link--facebook svg{
-  stroke: #666;
-  stroke-width: 1.1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-  &:hover {
-    stroke: $basic-green;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-}
+
 
