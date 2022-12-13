@@ -124,7 +124,7 @@
 
 .process__item--nutrient {
   &::before {
-    background-image: url("../../img/svg_icon/icon_leaf.svg");
+    background-image: url("../img/svg_icon/icon_leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -132,7 +132,7 @@
 
 .process__item--powder {
   &::before {
-    background-image: url("../../img/svg_icon/icon_powder.svg");
+    background-image: url("../img/svg_icon/icon_powder.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -140,14 +140,14 @@
 
 .process__item--replacement {
   &::before {
-    background-image: url("../../img/svg_icon/icon_replacement.svg");
+    background-image: url("../img/svg_icon/icon_replacement.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 .process__item--month {
   &::before {
-    background-image: url("../../img/svg_icon/icon_month.svg");
+    background-image: url("../img/svg_icon/icon_month.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

@@ -189,9 +189,9 @@
 }
 
 .example__demo--before {
-  background-image: url("../../img/index/cat-fat.webp");
+  background-image: url("../img/index/cat-fat.webp");
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index/cat-fat@2x.webp")
+    background-image: url("../img/index/cat-fat@2x.webp")
   }
   background-position-x: -18px;
   background-size: cover;
@@ -206,9 +206,9 @@
 }
 
 .example__demo--after {
-  background-image: url("../../img/index/cat-skinny.webp");
+  background-image: url("../img/index/cat-skinny.webp");
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index/cat-skinny@2x.webp")
+    background-image: url("../img/index/cat-skinny@2x.webp")
   }
   background-position-x: -18px;
   direction: rtl;
