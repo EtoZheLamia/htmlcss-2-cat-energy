@@ -1,0 +1,43 @@
+.cards-control{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom:50px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.control__button {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 16px 36px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(24, 23, 23, 0.3);
+    }
+    &:active {
+        outline: 1px solid black;
+    }
+    &:disabled {
+        cursor: none;
+        background-color: rgba(0, 0, 0, 0.09);
+        border: none;
+        outline: none;
+        color: #6d6c6c;
+    }
+}
+
+.cards__title {
+    margin: 0;
+}
+
+.cards__text {
+    margin: 0;
+}
